@@ -13,4 +13,6 @@ Inspired by the intelligence gathered about it so far:
 - https://news.ycombinator.com/item?id=20057612
 - https://www.intezer.com/blog-hiddenwasp-malware-targeting-linux-systems/
 
+Also improved with some suggestions from other free software lunatics on [an infamous mongolian basket-weaving forum](https://boards.4channel.org/g/thread/71259718). One fine /g/entooman also proposed a minified version. It doesn't seem to work, but I appreciate the idea.
+
 *This little bash script is dedicated to my dear and dead friend [Jaime Cochran](https://chronicle.su/news/jaime-cochran-lived/), who motivated me to get back into GNU / Linux many years ago while talking after a Phish show. I don't think I'll ever have the chops she had, but I do enjoy writing useful scripts, so there.*
