@@ -1,5 +1,5 @@
 # waspscanner
-A Basic Scanner for Vulnerabilities Related to HiddenWasp Malware on LiGnux. Must be run with sudo / as super user.
+A Basic Scanner for Vulnerabilities Related to HiddenWasp Malware on LiGnux. Must be run with sudo / as super user. Download *WaspScannerUtil.sh* and run from anywhere **with sudo**.
 
 Usage: `sudo sh WaspScannerUtil.sh`
 
