@@ -5,7 +5,7 @@ Dependencies: `perl`
 
 Usage: `sudo sh WaspScannerUtil.sh`
 
-That's it. It will output the results, and you will see them. This script simply creates a list of the files on your system that are potentially vulnerable to HiddenWasp, scans them to see if they are affected, then tells you whether or not they are. Only caveat is if a *.so* file turns out to be a symbolic link, then the *readelf* command will not be able to scan it, saying that the file is missing instead. This is normal. Also note that due to the nature of the find command, it may take 30 or so seconds to gather results the first time. Subsequent runs will only take one or two seconds. Enjoy.
+That's it. It will output the results, and you will see them. This script simply creates a list of the files on your system that are potentially vulnerable to HiddenWasp, scans them to see if they are affected, then tells you whether or not they are. Only caveat is if a *.so* file turns out to be a symbolic link, then the *readelf* command will not be able to scan it, saying that the file is missing instead. This is normal. Also note that due to the nature of the `find` command, it may take 30 or so seconds to gather results the first time. Subsequent runs will only take one or two seconds. Enjoy.
 
 ![Image](https://raw.githubusercontent.com/bongochong/waspscanner/master/Screenshot.png)
 
