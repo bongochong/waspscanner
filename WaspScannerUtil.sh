@@ -1,10 +1,9 @@
 #!/bin/bash
 echo "cleaning up from last scan..."
-rm ~/WaspScan1.txt ~/WaspScan2.txt ~/WaspScanPrePre.txt ~/WaspScanPre.txt ~/WaspScanSort.txt ~/WaspScan.sh
+rm ~/WaspScanPrePre.txt ~/WaspScanPre.txt ~/WaspScanSort.txt ~/WaspScan.sh
 echo "finished cleaning. now scanning..."
-find / -iname "*ld-*.so" | sed "/gz$/d" | sed "/debug/d" > ~/WaspScan1.txt
-find / -iname "ld-*.so.*" | sed "/gz$/d" | sed "/debug/d" > ~/WaspScan2.txt
-cat ~/WaspScan1.txt ~/WaspScan2.txt > ~/WaspScanPrePre.txt
+find / -iname "*ld-*.so" | sed "/gz$/d" | sed "/debug/d" > ~/WaspScanPrePre.txt
+find / -iname "ld-*.so.*" | sed "/gz$/d" | sed "/debug/d" >> ~/WaspScanPrePre.txt
 sort ~/WaspScanPrePre.txt > ~/WaspScanPre.txt
 uniq ~/WaspScanPre.txt > ~/WaspScanSort.txt
 perl -ne 'for$i(0..1){print}' ~/WaspScanSort.txt > WaspScan.sh
