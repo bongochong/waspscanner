@@ -13,7 +13,7 @@ That's it. It will output the results, and you will see them. This script simply
 
 On some systems there is a caveat when using *find* instead of *locate* as well: If a *.so* file turns out to be a symbolic link, then the *readelf* command will not be able to scan it, saying that there is *no such file* instead. This is nothing to worry about, and the *.so* file any symbolic link points to will still be scanned by this script. Most users will not encounter this issue, and you should be using the main / standard version of my tool anyway, which uses *locate*.
 
-Inspired by the intelligence gathered about it so far:
+**Inspired by the intelligence gathered about it so far**:
 - https://news.ycombinator.com/item?id=20057612
 - https://www.intezer.com/blog-hiddenwasp-malware-targeting-linux-systems/
 
