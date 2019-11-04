@@ -1,9 +1,9 @@
 # waspscanner
-A Basic Scanner for Vulnerabilities Related to HiddenWasp Malware on LiGnux. Must be run with sudo / as super user. Download *WaspScannerUtil.sh* and run from anywhere **with sudo**.
+A Basic Scanner for Vulnerabilities Related to HiddenWasp Malware on LiGnux. Download *WaspScannerUtil.sh* and run from anywhere. On some systems you may need to run it **as root**.
 
 Dependencies: `perl`
 
-Usage: `sudo sh WaspScannerUtil.sh`
+Usage: `sh WaspScannerUtil.sh` or `./WaspScannerUtil.sh`
 
 That's it. It will output the results, and you will see them. This script simply creates a list of the files on your system that are potentially vulnerable to HiddenWasp, generates another script around that list, which scans said files to see if they are affected, then tells you whether or not they are.
 
