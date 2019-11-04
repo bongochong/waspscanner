@@ -1,5 +1,5 @@
 # waspscanner
-A Basic Scanner for Vulnerabilities Related to HiddenWasp Malware on LiGnux. Download *WaspScannerUtil.sh* and run from anywhere. On some systems you may need to run it **as root**. If you do run it as root, simply remove the sudo directive from line 14 of the script before running it.
+A Basic Scanner for Vulnerabilities Related to HiddenWasp Malware on LiGnux. Download *WaspScannerUtil.sh* and run from anywhere. On some systems you may need to run it **as root**. If you do run it as root, simply remove the *sudo* directive from line 14 of the script before running it.
 
 Dependencies: `perl`
 
