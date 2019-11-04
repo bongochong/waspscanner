@@ -6,7 +6,7 @@ echo "finished cleaning. now scanning..."
 locate -i -e "*ld-*.so" | sed "/.gz$/d" > ~/WaspScanPre.txt
 locate -i -e "*ld-*.so.*" | sed "/.gz$/d" >> ~/WaspScanPre.txt
 sort -u ~/WaspScanPre.txt > ~/WaspScanSort.txt
-perl -ne 'for$i(0..1){print}' ~/WaspScanSort.txt > WaspScan.sh
+perl -ne 'for$i(0..1){print}' ~/WaspScanSort.txt > ~/WaspScan.sh
 sed -i "1~2s/^/echo 'scanning /" ~/WaspScan.sh
 sed -i "1~2s/$/...'/" ~/WaspScan.sh
 sed -i "2~2s/^/readelf -p .rodata /" ~/WaspScan.sh
