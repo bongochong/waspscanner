@@ -17,4 +17,4 @@ On some systems there is a caveat when using *find* instead of *locate* as well:
 - https://news.ycombinator.com/item?id=20057612
 - https://www.intezer.com/blog-hiddenwasp-malware-targeting-linux-systems/
 
-*This bash script-based scanner is dedicated to my dear and dead friend [Jaime Cochran](https://chronicle.su/news/jaime-cochran-lived/), who motivated me to get back into GNU / Linux many years ago while talking after a Phish show. I don't think I'll ever have the chops she had, but I do enjoy writing useful scripts, so there.*
+*This bash script-based scanner is dedicated to my dear and dead friend [Jaime Cochran](https://chronicle.su/news/jaime-cochran-lived/), who motivated me to get back into GNU/Linux many years ago while talking after a Phish show. I don't think I'll ever have the chops she had, but I do enjoy writing useful scripts, so there.*
