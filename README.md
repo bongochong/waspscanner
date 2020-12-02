@@ -3,9 +3,9 @@ A Basic Scanner for Vulnerabilities Related to HiddenWasp Malware on LiGnux. Dow
 
 Dependencies: `perl`
 
-Usage: `sh WaspScannerUtil.sh` or `./WaspScannerUtil.sh`
+Usage: `./WaspScannerUtil.sh`
 
-That's it. It will output the results, and you will see them. This script simply creates a list of the files on your system that are potentially vulnerable to HiddenWasp, generates another script around that list, which scans said files to see if they are affected, then tells you whether or not they are.
+That's it. It will output the results, and you will see them. This script simply creates a list of the files on your system that are **potentially** vulnerable to HiddenWasp, generates another script around that list, which scans said files to see if they are affected, then tells you whether or not they are.
 
 ![Image](https://raw.githubusercontent.com/bongochong/waspscanner/master/newscreen.png)
 
