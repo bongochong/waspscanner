@@ -1,4 +1,9 @@
 # waspscanner
+<p align="left">
+  <img src="https://i.imgur.com/tmiMGph.png">
+  <img src="https://i.imgur.com/yZ6NnIW.png">
+</p>
+
 A Basic Scanner for Vulnerabilities Related to HiddenWasp Malware on GNU/Linux. Download *WaspScannerUtil.sh* and run from anywhere. On some systems you may need to run it **as root**. If you do run it as root, simply remove the *sudo* directive from line 14 of the script before running it.
 
 Dependencies: `perl`
