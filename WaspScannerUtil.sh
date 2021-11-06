@@ -11,6 +11,11 @@ sed -i "1~2s/^/echo 'scanning /" ~/WaspScan.sh
 sed -i "1~2s/$/...'/" ~/WaspScan.sh
 sed -i "2~2s/^/readelf -p .rodata /" ~/WaspScan.sh
 sed -i '2~2s/$/ \| grep -q "\/etc\/ld\\.so\\.preload" \&\& \/bin\/echo -e "\\\e[32mnot vulnerable\\\e[0m" \|\| \/bin\/echo -e "\\\e[31mpotentially vulnerable\\\e[0m"/' ~/WaspScan.sh
-sudo sh ~/WaspScan.sh
+if [[ $(id -u) -ne 0 ]]
+  then
+	sudo sh ~/WaspScan.sh
+  else
+	sh ~/WaspScan.sh
+fi
 echo "done. please inspect your terminal for potential vulnerabilities, though do disregard ones related to a missing file. this is normal."
 exit
