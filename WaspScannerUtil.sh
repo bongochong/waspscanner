@@ -1,8 +1,9 @@
 #!/bin/bash
 #Consider running sudo updatedb beforehand
-echo "cleaning up from last scan..."
+echo "Cleaning up from last scan..."
+echo "---"
 rm -f ~/WaspScanPre.txt ~/WaspScanSort.txt ~/WaspScan.sh
-echo "finished cleaning. now scanning..."
+echo "Finished cleaning. Now scanning..."
 locate -i -e "*ld-*.so" | sed "/.gz$/d" > ~/WaspScanPre.txt
 locate -i -e "*ld-*.so.*" | sed "/.gz$/d" >> ~/WaspScanPre.txt
 sort -u ~/WaspScanPre.txt > ~/WaspScanSort.txt
@@ -17,5 +18,6 @@ if [[ $(id -u) -ne 0 ]]
   else
 	sh ~/WaspScan.sh
 fi
-echo "done. please inspect your terminal for potential vulnerabilities, though do disregard ones related to a missing file. this is normal."
+echo "Done. Please inspect your terminal for potential vulnerabilities, though do disregard ones related to a missing file. This is normal."
+echo "---"
 exit
