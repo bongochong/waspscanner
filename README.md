@@ -10,7 +10,7 @@ Dependencies: `perl`
 
 Usage: `./WaspScannerUtil.sh`
 
-That's it. It will output the results, and you will see them. This script simply creates a list of the files on your system that are **potentially** vulnerable to HiddenWasp, and generates another script around that list which scans said files using the `readelf` tool to see if they could be vulnerable.
+That's it. It will output the results, and you will see them. This script simply creates a list of the files on your system that could be affected by HiddenWasp, then generates another script around that list which scans said files using the `readelf` tool to detect missing strings that would indicate **potential** vulnerability to, or manipulation by, HiddenWasp.
 
 ![Image](https://raw.githubusercontent.com/bongochong/waspscanner/master/newscreen.png)
 
